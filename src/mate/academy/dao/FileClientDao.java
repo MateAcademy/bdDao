@@ -7,16 +7,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class FileClientDao {
+public class FileClientDao implements ClientDao{
 
-    public void save(Client client) throws IOException {
-        Path path = Paths.get("storage.dat");
-        Files.createFile(path);
-        try {
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("storage.dat"));
+    public void save(Client client) {
+//        Path path = Paths.get("storage.dat");
+//        Files.createFile(path);
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("storage.dat"))){
             objectOutputStream.writeObject(client);
-        } catch (IOException e) {
-            System.out.println();
+        } catch (Exception e) {
+            System.out.println("Не удалось записать клиента в базу");
         }
 
     }
