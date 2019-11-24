@@ -1,15 +1,14 @@
 package mate.academy;
 
-import mate.academy.dao.FileClientDao;
-import mate.academy.model.Client;
+import mate.academy.controller.ConsoleHandler;
+import mate.academy.service.PropertyLoader;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        FileClientDao fileClientDao = new FileClientDao();
-//        fileClientDao.save(new Client("Света", "+780567540700"));
-        System.out.println(fileClientDao.get());
-
+        System.out.println(PropertyLoader.getProperty("db.name"));
+        ConsoleHandler consoleHandler = new ConsoleHandler();
+        consoleHandler.handle();
     }
 }
