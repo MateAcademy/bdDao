@@ -1,16 +1,18 @@
 package mate.academy.dao;
 
+import mate.academy.di.Component;
 import mate.academy.model.Client;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class InMemoryClientDao implements ClientDao{
+@Component
+public class InMemoryClientDao implements ClientDao {
 
     /**
      * нам нужен всего один экземпляр поэтому "private final static"
-      */
-    private final static List<Client> inMemoryStorage = new ArrayList<>();
+     */
+    private static final List<Client> inMemoryStorage = new ArrayList<>();
 
     @Override
     public void save(Client client) {
@@ -19,6 +21,7 @@ public class InMemoryClientDao implements ClientDao{
 
     /**
      * просто достаю первого клиента
+     *
      * @return
      */
     @Override

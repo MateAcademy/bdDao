@@ -9,19 +9,24 @@ import java.io.IOException;
 
 public class ClientDaoFactory {
 
-    private final static ClientDao inMemoryClientDao = new InMemoryClientDao();
-    private final static ClientDao fileClientDao = new FileClientDao();
+    private static final ClientDao inMemoryDao = new InMemoryClientDao();
+    private static final ClientDao fileDao = new FileClientDao();
 
-    public static ClientDao getClientDao() {
+    public static ClientDao getClientDao(boolean isFileDao, boolean isInMemoryDao) {
 
         try {
             String dbName = PropertyLoader.getProperty("db.name");
-            if (dbName.equals("console")) {
-                return inMemoryClientDao;
+            if (dbName.equals("memory") && isInMemoryDao) {
+                return inMemoryDao;
             }
         } catch (IOException e) {
-            System.err.println("Нет доступа к файлу");
+            System.out.println("Нет доступа к файлу");
         }
-        return fileClientDao;
+        if (isFileDao) {
+            return fileDao;
+        } else {
+            throw new ComponentNotFoundException();
+        }
+
     }
 }
