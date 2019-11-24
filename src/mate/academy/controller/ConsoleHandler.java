@@ -9,10 +9,8 @@ import java.util.Scanner;
 public class ConsoleHandler {
     /**
      * нам нужен всего один экземпляр поэтому "private final static"
-     * мы говорим явно как должна создаваться clientDao, с помощью ClientDaoFactory и вот
-     * этого метода: getClientDao()
      */
-    private static final ClientDao clientDao = ClientDaoFactory.getClientDao();
+    private static final ClientDao clientDao;  //как внедрить зависимость?
 
     public void handle() {
         while (true) {
