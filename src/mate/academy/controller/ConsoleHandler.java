@@ -1,7 +1,6 @@
 package mate.academy.controller;
 
 import mate.academy.dao.ClientDao;
-import mate.academy.dao.FileClientDao;
 import mate.academy.factory.ClientDaoFactory;
 import mate.academy.model.Client;
 
@@ -10,6 +9,8 @@ import java.util.Scanner;
 public class ConsoleHandler {
     /**
      * нам нужен всего один экземпляр поэтому "private final static"
+     * мы говорим явно как должна создаваться clientDao, с помощью ClientDaoFactory и вот
+     * этого метода: getClientDao()
      */
     private static final ClientDao clientDao = ClientDaoFactory.getClientDao();
 
