@@ -14,7 +14,7 @@ public class PropertyLoader {
     public static String getProperty(String name) throws IOException {
         Path property = Paths.get("application.properties");
         String propertyFilesString = new String(Files.readAllBytes(property));
-        String result = propertyFilesString.split("=")[1];
+        String result = propertyFilesString.split(" = ")[1];
         return result;
 
     }

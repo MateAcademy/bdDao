@@ -5,6 +5,10 @@ import mate.academy.model.Client;
 
 import java.io.*;
 
+/**
+ * Это первый вариант хранения, серриализация, для этого серриализуемый обьект должен
+ * имплементить сериалайзабл
+ */
 @Component
 public class FileClientDao implements ClientDao{
 
@@ -17,7 +21,7 @@ public class FileClientDao implements ClientDao{
 
     }
 
-    //можно научиться брать по имени
+//TODO:    можно научиться брать по имени
     public Client get() {
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("storage.dat"))) {
             return  (Client) objectInputStream.readObject();

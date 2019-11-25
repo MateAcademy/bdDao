@@ -6,6 +6,8 @@ import mate.academy.model.Client;
 import java.util.ArrayList;
 import java.util.List;
 
+//TODO: есть отдельная реализация хранения в памяти, мне нужно разобраться с ней
+
 @Component
 public class InMemoryClientDao implements ClientDao {
 

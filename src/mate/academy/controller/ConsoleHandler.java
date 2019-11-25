@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class ConsoleHandler {
     /**
      * нам нужен всего один экземпляр поэтому "private final static"
+     * @Inject помечаем поле в которое хотим внедрить
      */
     @Inject
     private static ClientDao clientDao;

@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 public class Injector {
 
     static public void injectDependency() throws IllegalAccessException {
-        //миожно взять все классы, найти где есть аннотация компонент, выгрузить все классы из класслоадера
+//TODO:  можно взять все классы, найти где е сть аннотация компонент, выгрузить все классы из класслоадера
         Class consoleHandlerClass = ConsoleHandler.class;
         Class fileClientDaoClass = FileClientDao.class;
         Class inMemoryClientDao = InMemoryClientDao.class;
@@ -23,13 +23,13 @@ public class Injector {
                 field.setAccessible(true);
                 boolean fileDao = fileClientDaoClass.isAnnotationPresent(Component.class);
                 if (fileDao) {
-                    System.out.println("Работа с файлмс разрешани");
+                    System.out.println("Работа с файлами разрешена");
                 }
 
 
                 boolean inMemoryDao = inMemoryClientDao.isAnnotationPresent(Component.class);
                 if (inMemoryDao) {
-                    System.out.println("Робота с ОЗУ разоешана");
+                    System.out.println("Работа с ОЗУ разрешена");
                 }
 
                 ClientDao clientDao = ClientDaoFactory.getClientDao(fileDao, inMemoryDao);
