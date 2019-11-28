@@ -1,9 +1,8 @@
-package mate.academy.controller;
+package main.java.mate.academy.controller;
 
-import mate.academy.dao.ClientDao;
-import mate.academy.di.Inject;
-import mate.academy.factory.ClientDaoFactory;
-import mate.academy.model.Client;
+import main.java.mate.academy.dao.ClientDao;
+import main.java.mate.academy.di.Inject;
+import main.java.mate.academy.model.Client;
 
 import java.util.Scanner;
 
@@ -14,6 +13,9 @@ public class ConsoleHandler {
      */
     @Inject
     private static ClientDao clientDao;
+
+    @Inject
+//    private static HumanDao humanDao;
 
     static public void handle() {
         while (true) {

@@ -1,9 +1,7 @@
-package mate.academy;
+package main.java.mate.academy;
 
-import mate.academy.controller.ConsoleHandler;
-import mate.academy.di.Injector;
-
-import java.io.IOException;
+import main.java.mate.academy.controller.ConsoleHandler;
+import main.java.mate.academy.di.Injector;
 
 public class Main {
     public static void main(String[] args) throws IllegalAccessException {

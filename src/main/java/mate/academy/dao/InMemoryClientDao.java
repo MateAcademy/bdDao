@@ -1,7 +1,7 @@
-package mate.academy.dao;
+package main.java.mate.academy.dao;
 
-import mate.academy.di.Component;
-import mate.academy.model.Client;
+import main.java.mate.academy.di.Component;
+import main.java.mate.academy.model.Client;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,10 @@
-package mate.academy.di;
+package main.java.mate.academy.di;
 
-import mate.academy.controller.ConsoleHandler;
-import mate.academy.dao.ClientDao;
-import mate.academy.dao.FileClientDao;
-import mate.academy.dao.InMemoryClientDao;
-import mate.academy.factory.ClientDaoFactory;
+import main.java.mate.academy.controller.ConsoleHandler;
+import main.java.mate.academy.dao.ClientDao;
+import main.java.mate.academy.dao.FileClientDao;
+import main.java.mate.academy.dao.InMemoryClientDao;
+import main.java.mate.academy.factory.ClientDaoFactory;
 
 import java.lang.reflect.Field;
 
