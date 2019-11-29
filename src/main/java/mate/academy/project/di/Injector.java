@@ -1,10 +1,10 @@
-package main.java.mate.academy.di;
+package mate.academy.project.di;
 
-import main.java.mate.academy.controller.ConsoleHandler;
-import main.java.mate.academy.dao.ClientDao;
-import main.java.mate.academy.dao.FileClientDao;
-import main.java.mate.academy.dao.InMemoryClientDao;
-import main.java.mate.academy.factory.ClientDaoFactory;
+import mate.academy.project.controller.ConsoleHandler;
+import mate.academy.project.dao.ClientDao;
+import mate.academy.project.dao.FileClientDao;
+import mate.academy.project.dao.InMemoryClientDao;
+import mate.academy.project.factory.ClientDaoFactory;
 
 import java.lang.reflect.Field;
 
@@ -19,7 +19,7 @@ public class Injector {
 
         Field[] fields = consoleHandlerClass.getDeclaredFields();
         for (Field field : fields) {
-            if (field.isAnnotationPresent(Inject.class)) {
+            if (field.isAnnotationPresent(mate.academy.project.di.Inject.class)) {
                 field.setAccessible(true);
                 boolean fileDao = fileClientDaoClass.isAnnotationPresent(Component.class);
                 if (fileDao) {

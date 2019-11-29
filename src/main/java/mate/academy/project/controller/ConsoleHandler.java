@@ -1,8 +1,9 @@
-package main.java.mate.academy.controller;
+package mate.academy.project.controller;
 
-import main.java.mate.academy.dao.ClientDao;
-import main.java.mate.academy.di.Inject;
-import main.java.mate.academy.model.Client;
+import mate.academy.project.dao.ClientDao;
+import mate.academy.project.di.Inject;
+import mate.academy.project.model.Client;
+
 
 import java.util.Scanner;
 

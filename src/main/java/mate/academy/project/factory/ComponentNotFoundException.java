@@ -1,4 +1,4 @@
-package main.java.mate.academy.factory;
+package mate.academy.project.factory;
 
 public class ComponentNotFoundException extends RuntimeException {
 }

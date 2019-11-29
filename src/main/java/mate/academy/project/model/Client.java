@@ -1,4 +1,4 @@
-package main.java.mate.academy.model;
+package mate.academy.project.model;
 
 import java.io.Serializable;
 

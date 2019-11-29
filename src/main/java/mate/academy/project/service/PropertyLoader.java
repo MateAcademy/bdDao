@@ -1,4 +1,4 @@
-package main.java.mate.academy.service;
+package mate.academy.project.service;
 
 import java.io.IOException;
 import java.nio.file.Files;

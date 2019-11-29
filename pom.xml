@@ -7,6 +7,14 @@
     <groupId>ua.klunniy</groupId>
     <artifactId>java-maven</artifactId>
     <version>1.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.target>11</maven.compiler.target>
@@ -34,7 +42,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>main.java.mate.academy.Main</mainClass>
+                            <mainClass>mate.academy.project.Main</mainClass>
                         </manifest>
                     </archive>
 

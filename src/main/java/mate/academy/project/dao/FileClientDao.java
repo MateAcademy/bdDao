@@ -1,7 +1,8 @@
-package main.java.mate.academy.dao;
+package mate.academy.project.dao;
 
-import main.java.mate.academy.di.Component;
-import main.java.mate.academy.model.Client;
+import mate.academy.project.di.Component;
+import mate.academy.project.model.Client;
+
 
 import java.io.*;
 
@@ -10,7 +11,7 @@ import java.io.*;
  * имплементить сериалайзабл
  */
 @Component
-public class FileClientDao implements ClientDao{
+public class FileClientDao implements ClientDao {
 
     public void save(Client client) {
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("storage.dat"))){

@@ -1,9 +1,9 @@
-package main.java.mate.academy.factory;
+package mate.academy.project.factory;
 
-import main.java.mate.academy.dao.ClientDao;
-import main.java.mate.academy.dao.FileClientDao;
-import main.java.mate.academy.dao.InMemoryClientDao;
-import main.java.mate.academy.service.PropertyLoader;
+import mate.academy.project.dao.ClientDao;
+import mate.academy.project.dao.FileClientDao;
+import mate.academy.project.dao.InMemoryClientDao;
+import mate.academy.project.service.PropertyLoader;
 
 import java.io.IOException;
 

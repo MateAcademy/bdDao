@@ -1,4 +1,4 @@
-package main.java.mate.academy.di;
+package mate.academy.project.di;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
