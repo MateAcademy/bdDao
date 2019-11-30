@@ -8,7 +8,7 @@ public class Test1 {
 
         DataInputStream dis = new DataInputStream(new FileInputStream("file.txt"));
 
-        byte[] byffer = new byte[512];
+        byte[] byffer = new byte[512 ];
         while (dis.available() != 0) {
             int count = dis.read(byffer);
             if (count > 0) {
