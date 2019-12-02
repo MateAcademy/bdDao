@@ -14,10 +14,11 @@ public class HumanDao {
         humansStorage.add(human);
     }
 
-    public Optional<Human> get(int index) {
+    public Optional<Human> getOptional(int index) {
         if (index >=  humansStorage.size()) {
             return Optional.empty() ;
         }
         return Optional.of(humansStorage.get(index));
+//        return Optional.ofNullable(humansStorage.get(index));
     }
 }

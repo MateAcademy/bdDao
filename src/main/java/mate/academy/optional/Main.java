@@ -9,19 +9,16 @@ public class Main {
     private static final HumanDao humanDao = new HumanDao();
 
     public static void main(String[] args) {
-        Optional<Human> optHuman = humanDao.get(0);
+        Optional<Human> optHuman = humanDao.getOptional(0);
+
+ //       optHuman.orElse();
+
 
         if (optHuman.isPresent()) {
             System.out.println(optHuman.get().getName()  );
         }
-
-//        if (human != null && human.getCar() != null && human.getCar().getModel() != null) {
-//            System.out.println(human.getCar().getModel());
-//        }
-
-
+        optHuman.ifPresent(human -> System.out.println(human.getName()));
     }
-
 
     static {
         humanDao.add(new Human(12, "German"));
