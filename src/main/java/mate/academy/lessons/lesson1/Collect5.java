@@ -1,4 +1,4 @@
-//package mate.academy.lessons.lesson1;
+//package mate.academy.lessons.LL;
 //
 //import mate.academy.lessons.collection.Task3;
 //
