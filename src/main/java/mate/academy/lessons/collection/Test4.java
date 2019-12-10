@@ -1,22 +1,23 @@
 package mate.academy.lessons.collection;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 /**
  * @author Sergey Klunniy
  */
 public class Test4 {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        List<Integer> list2 = new LinkedList<>();
+        Queue<String> queue = new PriorityQueue<>();
+        queue.offer("a");
+        queue.offer("b");
+        queue.offer("c");
 
-        list.add(null);
-        list.add(null);
-        list.add(null);
-        list.add(5);
+       queue.remove();
+queue.poll();
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
 
-        System.out.println(list);
+        queue.forEach(System.out::println);
     }
 }
