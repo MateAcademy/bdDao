@@ -15,8 +15,12 @@ public class Main2 {
 
         Optional<Human> optHuman = humanDao.get(0);
         if (optHuman.isPresent()) {
-            System.out.println(optHuman.get());
+            System.out.println(optHuman.get().getName());
         }
+
+        optHuman.ifPresent(human -> System.out.println(human.getName()));
+
+
 //        if (human != null && human.getCar() != null && human.getCar().getModel() != null )
 //            System.out.println(human.getCar().getModel());
     }
