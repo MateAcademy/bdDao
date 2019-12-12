@@ -1,4 +1,4 @@
-package mate.academy.lessons.lesson9G;
+package mate.academy.lessons.lesson9;
 
 import java.io.IOException;
 
