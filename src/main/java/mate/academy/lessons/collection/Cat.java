@@ -9,31 +9,31 @@ package mate.academy.lessons.collection;
  * eat() - увеличивает уровень энергии на 200
  * sleep() - увеличивает уровень энергии на 100
  */
-public class Cat {
-    private String name;
-    private int energy = 1000;
-
-    void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    void run() {
-        energy = energy - 100;
-    }
-
-    int getStamina() {
-        return energy;
-    }
-
-    void eat() {
-        energy += 200;
-    }
-
-    void sleep() {
-        energy += 100;
-    }
-}
+//public class Cat {
+//    private String name;
+//    private int energy = 1000;
+//
+//    void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    void run() {
+//        energy = energy - 100;
+//    }
+//
+//    int getStamina() {
+//        return energy;
+//    }
+//
+//    void eat() {
+//        energy += 200;
+//    }
+//
+//    void sleep() {
+//        energy += 100;
+//    }
+//}
