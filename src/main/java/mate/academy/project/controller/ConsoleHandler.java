@@ -32,7 +32,11 @@ public class ConsoleHandler {
                     System.out.println(clientDao.get());
                     break;
                 case 3:
+                    scanner.close();
                     return;
+                default:
+                    System.out.println("Не верный ввод, повторите еще раз");
+                    break;
             }
 
         }

@@ -15,6 +15,5 @@ public class PropertyLoader {
         String propertyFilesString = new String(Files.readAllBytes(property));
         String result = propertyFilesString.split(" = ")[1];
         return result;
-
     }
 }

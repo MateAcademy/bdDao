@@ -26,7 +26,6 @@ public class Injector {
                     System.out.println("Работа с файлами разрешена");
                 }
 
-
                 boolean inMemoryDao = inMemoryClientDao.isAnnotationPresent(Component.class);
                 if (inMemoryDao) {
                     System.out.println("Работа с ОЗУ разрешена");
