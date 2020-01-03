@@ -9,9 +9,8 @@
         <module name="bdDao" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="bdDao" target="11" />
-      <module name="java-maven" target="1.8" />
+    <bytecodeTargetLevel target="8">
+      <module name="bdDao" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
