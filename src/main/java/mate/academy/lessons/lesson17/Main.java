@@ -6,33 +6,20 @@ package mate.academy.lessons.lesson17;
 public class Main {
     public static void main(String[] args) {
 
-//        Operation operation = new Operation() {
-//            @Override
-//            public double getResalt(double value1, double value2) {
-//                return value1 + value2;
-//            }
-//        };
-
-        Operation operation = (value1, value2) -> value1 + value2;
-
-        System.out.println(operation.getResalt(5.0, 5.0));
-
-
-        Printer printer = new Printer() {
+        Factorial factorial = new Factorial() {
             @Override
-            public void println(String str) {
-                System.out.println(str + " !");
+            public int getResult(int value) {
+               int count = 1;
+
+                for (int i = 1; i <= value; i++) {
+                    count = count*i;
+                }
+
+                return count;
             }
         };
 
-        printer.println("Hello");
+        System.out.println(factorial.getResult(5));
 
-        Printer printer1 = value -> {
-            System.out.println(value);
-            System.out.println(value);
-        };
-
-
-        printer1.println("y");
     }
 }
