@@ -5,7 +5,7 @@ import mate.academy.lessons.lesson18.CarService;
 /**
  * @author Sergey Klunniy
  */
-@Service
+//@Service
 public class DefaultCarServiceImpl implements CarService {
 
     @Override
